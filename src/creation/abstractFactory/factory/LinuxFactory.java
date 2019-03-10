@@ -1,9 +1,6 @@
 package creation.abstractFactory.factory;
 
-import creation.abstractFactory.Button;
-import creation.abstractFactory.LinuxButton;
-import creation.abstractFactory.Window;
-import creation.abstractFactory.WindowWindow;
+import creation.abstractFactory.*;
 
 public class LinuxFactory implements AbstractFactory {
     @Override
@@ -13,6 +10,6 @@ public class LinuxFactory implements AbstractFactory {
 
     @Override
     public Window createWindow() {
-        return new WindowWindow();
+        return new LinuxWindow();
     }
 }
